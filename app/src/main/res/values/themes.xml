@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Use Material3 or AppCompat theme to prevent crashes with AppCompatActivity -->
+    <style name="Theme.PRINTERUSBNETWORKSERVE" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>
