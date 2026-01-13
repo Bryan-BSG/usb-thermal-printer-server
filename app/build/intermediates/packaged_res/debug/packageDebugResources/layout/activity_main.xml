@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USB Thermal Printer Network Server"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service runs in background and auto-starts on boot"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:textColor="#666"/>
+
+    <CheckBox
+        android:id="@+id/cbAutoStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto-start on boot"
+        android:checked="true"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Server"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh USB Devices"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F0F0F0"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service starting..."
+            android:textSize="14sp"
+            android:fontFamily="monospace"/>
+    </ScrollView>
+
+</LinearLayout>
